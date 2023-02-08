@@ -15,8 +15,6 @@
     "@strapi/provider-upload-cloudinary": "^4.5.3",
     "@strapi/strapi": "4.5.3",
     "@strapi/utils": "^4.5.4",
-    "mysql": "^2.18.1",
-    "mysql2": "^2.3.3",
     "pg": "^8.9.0",
     "pg-connection-string": "^2.5.0",
     "strapi-plugin-slugify": "^2.3.2"
