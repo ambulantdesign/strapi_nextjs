@@ -15,11 +15,14 @@ module.exports = ({ env }) => ({
       host: env("DATABASE_HOST", "localhost"),
       port: env.int("DATABASE_PORT", 5432),
       database: env("DATABASE_NAME", "db_dj_events_backend"),
-      user: env("DATABASE_USERNAME", "db_dj_events_backend_user"),
+      user: env("DATABASE_USERNAME", "postgres"),
       password: env("DATABASE_PASSWORD", "7J2F3vYBYD2QjAtpA8BslzbzYzg1JBz4"),
       schema: env("DATABASE_SCHEMA", "public"), // Not required
       ssl: env.bool("DATABASE_SSL", false),
     },
     debug: false,
+    options: {
+      autoMigration: true, // this option is required in dbs other than sqlite so that tables can be created autuomatically
+    },
   },
 });
