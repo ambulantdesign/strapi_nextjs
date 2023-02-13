@@ -1,6 +1,6 @@
 // path: ./config/env/production/database.js
-
-const parse = require("pg-connection-string").parse;
+const { parse } = require("pg-connection-string");
+// const parse = require("pg-connection-string").parse;
 // const config = parse(process.env.DATABASE_URL);
 const { host, port, database, user, password } = parse(env("DATABASE_URL"));
 
